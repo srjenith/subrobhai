@@ -1,0 +1,255 @@
+/* --------- Custom global css file --------- */
+@import url(./global.css);
+
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shantell Sans', cursive;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom, #ad2afe, #dff1ff);
+    justify-content: center;
+    align-items: center;
+}
+
+body .color{
+    position: absolute;
+    filter: blur(80px);
+}
+
+body .color:nth-child(1){
+    background: #fbd09f;
+    height: 600px;
+    width: 600px;
+    top: -350px;
+}
+body .color:nth-child(2){
+    background: #734fcf;
+    height: 500px;
+    width: 500px;
+    bottom: -150px;
+    left: 100px;
+}
+body .color:nth-child(3){
+    background: #25b8dd;
+    height: 300px;
+    width: 300px;
+    bottom: 50px;
+    right: 100px;
+}
+
+
+/* --------- scrollbar ----------- */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgb(215, 140, 255));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, rgb(126, 191, 221));
+}
+
+/* --------- scrollbar ----------- */
+
+/*----------------- Main section Customize here -------------------*/
+section.main{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    display: inline-block;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    color: #fff;
+    border: 1px solid rgba(255,255,255,1);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 12px 8px 45px rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 15px 0;
+    overflow-x: hidden;
+}
+/*----------------- Main section Customize here -------------------*/
+
+/*----------- Scroll bar -----------------*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgb(215, 140, 255));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, rgb(126, 191, 221));
+}
+
+
+
+
+
+
+/*==================--------------------- Main Section Start Here ---------------=================*/
+
+
+/*-------------- Navbar Section CSS Start ---------------*/
+
+
+.navbar-nv{
+    /* background: linear-gradient(to left, #eac396, #ae42f8); */
+    width:94.5%;
+    position: fixed;
+    margin-bottom:520px;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+    
+}
+
+ nav.navbar-nv label{
+    float: left;
+    padding: 3px 11px;
+    margin: 0 3rem;
+}
+ nav.navbar-nv label img{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+nav.navbar-nv ul{
+    float: right;
+    margin: 1.5rem 2rem;
+}
+
+nav.navbar-nv ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav.navbar-nv ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 16px;
+}
+
+nav.navbar-nv ul li a:hover{
+    background: white;
+    color: #eac396;
+    padding: 5px 14px;
+    border-radius: 25px 25px;
+}
+
+nav.navbar-nv ul li a.active{
+    border: 1px solid #fff;
+    padding: 5px 14px;
+    border-radius: 25px 25px;
+} 
+/*-------------- Navbar Section CSS End ---------------*/
+
+
+
+/*---------------- Header section CSS start ----------------------*/
+section.header .container{
+    padding: 0;
+}
+
+section.header .header_items{
+    height: 100%;
+    width: 100%;
+}
+
+section.header .header_items .row{
+    display: flex;
+    width: 100%;
+}
+
+section.header .header_items .row .col:nth-child(1){
+    height: auto;
+    width: 50%;
+    background: #fbea975e;
+    border-radius: 0 0 100%;
+}
+
+section.header .header_items .row .col:nth-child(2){
+    height: 100%;
+    width: 50%;
+}
+
+section.header .header_items .header_content{
+    height: 100%;
+    width: 100%;
+}
+
+section.header .header_items .header_content .header-texts{
+    position: relative;
+    top: 30%;
+    margin-left: 0;
+    text-align: left;
+    left: 7%;
+}
+
+section.header .header_items .header_content h3::after{
+    content: '';
+    height: 2px;
+    width: 18vw;
+    background: white;
+    display: inline-block;
+    margin-left: 1%;
+    transform: translateY(-10px);
+}
+
+section.header .header_items .header_content h1{
+    font-size: 3rem;
+    margin: 1.2rem 0;
+    font-weight: 100;
+}
+
+section.header .header_items .header_content h1 span{
+    color: #cf4f65;
+}
+
+section.header .header_items .header_content h4{
+    font-size: 2rem;
+}
+
+section.header .header_items .header_content .header-texts{
+    padding: 0 2rem 0 0;
+}
+
+section.header .header_items .header_image{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section.header .header_items .header_image img{
+    width: 35rem;
+    margin: 5rem 0;
+}
+/*---------------- Header section CSS End ----------------------*/
+
+
+
+
+
+
+
+/*==================--------------------- Main Section End.. Here ---------------=================*/
